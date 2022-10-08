@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media query css -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="text-center">Accordion Practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="acc_Ex">
+              <div class="accordion-item">
+                <!-- item1 -->
+
+                <!-- question -->
+                <h2 class="accordion-header" id="headOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#cOne"
+                    aria-expanded="true"
+                    aria-controls="cOne"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, atque!
+                  </button>
+                </h2>
+                <!-- answer -->
+                <div
+                  id="cOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headOne"
+                  data-bs-parent="#acc_Ex"
+                >
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo iusto voluptatem omnis alias rem cumque, commodi, vel
+                      harum ducimus dolor, qui eos obcaecati provident deserunt
+                      eveniet incidunt debitis nulla necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#cTwo"
+                    aria-expanded="false"
+                    aria-controls="cTwo"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="cTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headTwo"
+                  data-bs-parent="#acc_Ex"
+                >
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo iusto voluptatem omnis alias rem cumque, commodi, vel
+                      harum ducimus dolor, qui eos obcaecati provident deserunt
+                      eveniet incidunt debitis nulla necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#cThree"
+                    aria-expanded="false"
+                    aria-controls="cThree"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="cThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headThree"
+                  data-bs-parent="#acc_Ex"
+                >
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo iusto voluptatem omnis alias rem cumque, commodi, vel
+                      harum ducimus dolor, qui eos obcaecati provident deserunt
+                      eveniet incidunt debitis nulla necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- alert testing -->
+    <section class="mt-5">
+      <h1 class="text-center">Alert Message</h1>
+      <div class="container">
+        <p class="alert alert-warning alert-dismissible fade show">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+          voluptatibus magnam est minus aliquam exercitationem repellat.
+          Perferendis corrupti modi odit aliquam dicta repellendus cumque odio
+          debitis! Nostrum consequatur sequi alias.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </p>
+      </div>
+    </section>
+
+    <!-- badge -->
+    <section>
+      <h1 class="text-center">Badge</h1>
+      <div class="container">
+        <button type="button" class="btn btn-primary position-relative">
+          Inbox
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+      <h1 class="text-center">Modal</h1>
+      <div class="container">
+        <div class="mymodal text-center">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Click Here to Complete Registration
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Congratulations!
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Your Registration is Successful.</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boostrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
